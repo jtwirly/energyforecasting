@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import React, { useState, useEffect } from 'react';
 import { Wind, Sun, Activity, ArrowRight } from 'lucide-react';
 import { LineChart, Line, ResponsiveContainer } from 'recharts';
+import { useState, useEffect } from 'react';
 
 const generateWaveData = (offset) => {
   return Array(24).fill().map((_, i) => ({
@@ -53,11 +53,9 @@ export default function MarblismHero() {
                 Predict Tomorrow's Energy Today
               </span>
             </h1>
-            
             <p className="text-xl text-slate-300">
-              Marblism delivers precise renewable energy forecasting powered by advanced AI. Transform your grid operations with real-time wind and solar generation predictions.
+              Marblism delivers precise renewable energy forecasting powered by advanced AI. Transform your grid operations with real-time predictions for wind, solar, and demand.
             </p>
-
             <div className="flex space-x-4">
               <button className="px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-lg flex items-center transition-all">
                 Start Forecasting
